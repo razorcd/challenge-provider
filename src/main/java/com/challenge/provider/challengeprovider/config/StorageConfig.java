@@ -1,8 +1,10 @@
 package com.challenge.provider.challengeprovider.config;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -21,21 +23,15 @@ public class StorageConfig {
      * @return [Path] Path to global storage folder.
      */
     @Bean("storage-folder")
+    @Scope(BeanDefinition.SCOPE_SINGLETON)
     public Path storageFolder() {
-        return Paths.get("projects", environment);
-    }
+        Path storageFolder = Paths.get("projects", environment);
 
-    /**
-     * Create bean for temporary folder storage.
-     *
-     * @return [Path] Path to temporary folder.
-     */
-    @Bean("temp-folder")
-    public Path tempFolder() {
         try {
-            return Files.createTempDirectory("challenge_provider_temp");
+            Files.createDirectory(storageFolder);
         } catch (IOException e) {
-            throw new RuntimeException("IO error durring temporary folder creation. "+e.getMessage());
+            throw new RuntimeException("IO error during storage folder creation. " + e.getMessage());
         }
+        return storageFolder;
     }
 }
