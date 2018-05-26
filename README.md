@@ -39,19 +39,19 @@ Tests are also included.
 - [x] use mockable Clock bean 
 - [x] add start challenge with countdown timer
 - [x] add confirm alert for start challenge button
-- [] add controller method to download solution file
-- [] display duration of solution 
-- [] fix the N+1 reads when getting all challenges 
+- [ ] add controller method to download solution file
+- [ ] display duration of solution 
+- [ ] fix the N+1 reads when getting all challenges 
 - [x] add Spring Security with Basic Auth
 - [x] limit admin interface by user Role
-- [] add Challenge state machine (not started, running, ended-not-solved, ended-solved)
-- [] add functional tests with Selenium
-- [] cleanup JSP templates to decouple admin and candidates views completely
-- [] add DTOs
-- [] add CustomExceptions and global 500 Error page
-- [] setup CI with Travis
-- [] deploy to DigitalOcean
-- [] setup CD with Docker Cloud
+- [ ] add Challenge state machine (not started, running, ended-not-solved, ended-solved)
+- [ ] add functional tests with Selenium
+- [ ] cleanup JSP templates to decouple admin and candidates views completely
+- [ ] add DTOs
+- [ ] add CustomExceptions and global 500 Error page
+- [ ] setup CI with Travis
+- [ ] deploy to DigitalOcean
+- [ ] setup CD with Docker Cloud
 
 
 ## License
