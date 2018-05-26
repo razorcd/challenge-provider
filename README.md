@@ -56,4 +56,4 @@ Tests are also included.
 
 ## License
 
-GPL licence. see [license.txt](license.txt)
+GNU 3. See: [LICENSE](https://github.com/razorcd/challenge-provider/blob/master/LICENSE)
