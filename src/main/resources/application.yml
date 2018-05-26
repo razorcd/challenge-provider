@@ -2,6 +2,7 @@ app:
   accounts:
     admin:
       username: "admin"
+      # default pass is "admin", bcrypt encoded. Please change it when deploying !!!
       password: "$2a$10$Z8b9JRqhxe8ZpPzUW8ZAm.1SDKUsh12uFBYs3mQcC4fV5sPxNsOAm"
   storage:
     folder: "challenges"
