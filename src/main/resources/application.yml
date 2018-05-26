@@ -1,2 +1,18 @@
-environment: "development"
-description.filename: "description.txt"
+app:
+  accounts:
+    admin:
+      username: "admin"
+      password: "$2a$10$Z8b9JRqhxe8ZpPzUW8ZAm.1SDKUsh12uFBYs3mQcC4fV5sPxNsOAm"
+  storage:
+    folder: "challenges"
+    solution:
+      filename: "solution.json"
+    source:
+      filename: "source.json"
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+debug: false

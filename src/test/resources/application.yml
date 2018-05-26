@@ -1,2 +1,14 @@
-environment: "test"
-description-filename: "description.txt"
+app:
+  storage:
+    folder: "challenges-test"
+    solution:
+      filename: "solution.json"
+    source:
+      filename: "source.json"
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+      
