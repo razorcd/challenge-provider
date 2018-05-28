@@ -10,7 +10,7 @@ An admin creates a challenge, it receives an ID of the challenge and the link to
 
 ## Technology used:
 
-Java with SpringBoot, Spring Security, JSP, Jackson, JUnit, Mokito and JavaScript. 
+Java with SpringBoot, Spring Security, JSP, Jackson, JSR303, JUnit, Mokito and JavaScript. 
 
 The persistence is file storage. Why? Just for fun! (Ideally would be RDB.)
 
@@ -46,6 +46,7 @@ https://github.com/razorcd/challenge-provider/blob/master/src/main/resources/app
 - [x] use mockable Clock bean 
 - [x] add start challenge with countdown timer
 - [x] add confirm alert for start challenge button
+- [ ] implement business layer for all domains (remove repository injections from controllers)
 - [ ] add controller method to download solution file
 - [ ] display duration of solution 
 - [ ] fix the N+1 reads when getting all challenges 
