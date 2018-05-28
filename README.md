@@ -55,8 +55,9 @@ https://github.com/razorcd/challenge-provider/blob/master/src/main/resources/app
 - [ ] add Challenge state machine (not started, running, ended-not-solved, ended-solved)
 - [ ] add functional tests with Selenium
 - [ ] cleanup JSP templates to decouple admin and candidates views completely
-- [ ] add DTOs
+- [ ] add DTOs (optional)
 - [ ] add CustomExceptions and global 500 Error page
+- [ ] add maven-docker plugin to build the images
 - [ ] setup CI with Travis
 - [ ] deploy to DigitalOcean
 - [ ] setup CD with Docker Cloud
